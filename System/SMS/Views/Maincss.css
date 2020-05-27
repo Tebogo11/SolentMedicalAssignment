@@ -1,0 +1,50 @@
+html {
+  background-color: #3d4849;
+}
+#container {
+  background-color: #3d4849;
+  padding: 20px;
+  height: 500px;
+  position: relative;
+  min-height: 100vh;
+}
+
+#main {
+  background-color: #3d4849;
+  margin-left: 5px;
+  color: white;
+  padding-bottom: 2.5rem;
+  margin-right: 5px;
+  border-right-style: solid rgb(31, 221, 31);
+  border-left-style: solid rgb(31, 221, 31);
+}
+#main p {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: rgb(31, 221, 31);
+  padding: 4px;
+}
+
+#main h2 {
+  color: rgb(31, 221, 31);
+  text-align: center;
+}
+
+#main h4 {
+  color: rgb(31, 221, 31);
+  font-size: 19px;
+  text-align: center;
+}
+
+#footer {
+  background-color: #3d4849;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  height: 2.5rem;
+}
+
+#footer h2 {
+  color: rgb(31, 221, 31);
+}
