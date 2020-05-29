@@ -87,6 +87,7 @@
       </form>
 
       <?php
+     
       $username = $_POST["Uname"];
       $password = $_POST["Password"];
       $firstName = $_POST["fname"];
@@ -115,8 +116,6 @@
         $DOB,
         $accessLevel
       );
-      echo "<br> <h2>All done</h2>";
-      echo "<a href='Login.php'>'click here to sign in'</a>";
 
       ?>
     </div>
@@ -125,22 +124,6 @@
 </div>
 </body>
 
-<!--footer-->
-<div id="footer">
-  <h2>Contact US</h2>
-  <p> Email : SMS@outlook.co.uk</p>
-  <p> Phone Number : 44-765-5512-377 </p>
-  <div class="row justify-content-md-center">
-    <div class="col-md-auto">
-      <p> Address :</p>
-    </div>
-    <div class="col-md">
-      <p>1 London Road, Southampton, SO15 2AE</p>
-    </div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-  </div>
-</div>
+
 
 </html>

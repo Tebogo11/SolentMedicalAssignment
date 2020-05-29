@@ -82,7 +82,8 @@ if (!isset($_SESSION["gatekeeper"])) {
                                             $patid = $_GET["Pid"];
                                         }
 
-                        echo "<form method='POST' action='BookAppointment.php?Pid=$patid'>";
+                        echo "<form method='POST' action='BookAppointment.php'>";
+                        echo  "<input type='hidden' name='PID' value='$patid' />";
                         echo "<h3> Choose Your Appointment Date : </h3>";
                         echo "Day <select id='ADay' name ='ADay'>";
                         for ($i = 1; $i <= 31; $i++) {
@@ -134,6 +135,7 @@ if (!isset($_SESSION["gatekeeper"])) {
                 <?php
 
                 //delete 
+                error_reporting(0);
                 $AppointID = $_GET["Aid"];
                 delete($AppointID);
                 ?>

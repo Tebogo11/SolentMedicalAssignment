@@ -17,7 +17,7 @@
 // Test that the authentication, checks if session variable exists
 if (!isset($_SESSION["gatekeeper"])) {
   header("Location: index.php");
-} else if ($_SESSION["Access"] == "Staff") {
+} else if ($_SESSION["Access"] == "Staff" || $_SESSION["Access"] == "Doctor") {
 ?>
 
   <div id="container">

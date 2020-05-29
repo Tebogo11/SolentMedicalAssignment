@@ -19,7 +19,7 @@
 include_once("../Controller/AppointmentLibrary.php");
                 $userID = $_SESSION["gatekeeper"];
 
-                $patid = $_GET["Pid"];
+                $patid = $_POST["PID"];
                 $dd = $_POST["ADay"];
                 $md = $_POST["AMonth"];
                 $yd = $_POST["AYear"];
@@ -38,7 +38,7 @@ include_once("../Controller/AppointmentLibrary.php");
                 }
                 echo "<p><div class='alert alert-success' role='alert'>
                 <h4 class='alert-heading'>You have successfully Added a new Appointment</h4>
-                <p><a href='AppointmentPage.php'>Click here to view results </a></p>
+                <p><a href='AppointmentPage.php?Pid=$patid'>Click here to view results </a></p>
               </div> </p>";
                 
                 ?>

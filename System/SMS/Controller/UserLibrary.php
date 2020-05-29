@@ -71,6 +71,10 @@ function addUser(
         $newAcc = new User(0, $username, $password, $firstName, $lastName, $address, $phoneNumber, $email, $dob, $accessLevel);
         //Store user to data base with addUser method
         $dao->addUser($newAcc);
+        echo "<p><div class='alert alert-success' role='alert'>
+        <h4 class='alert-heading'>You have successfully created an account</h4>
+        <p><a href='Login.php'>LOGIN HERE </a></p>
+      </div> </p>";
     } catch (PDOException $e) {
 
         echo "Error: $e";

@@ -33,6 +33,7 @@ if (!isset($_SESSION["gatekeeper"])) {
                  }
                 $userID = $_SESSION["gatekeeper"];
 
+                error_reporting(0);
                 if ($patid == null) {
                     $accountinfo = findUserByID($userID);
                 } else {
